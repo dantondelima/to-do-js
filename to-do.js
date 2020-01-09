@@ -31,14 +31,16 @@ function criaLista(){
     select.appendChild(item);
 } 
 
-function criaTarefa(lista){
+function criaTarefa(listaId){
+    console.log(listaId);
     let nomeTarefa = document.querySelector("#nome-tarefa").value;
     let nome = document.createTextNode(nomeTarefa);
     let tarefa = document.createElement("li");
     let divTarefa = document.createElement("div");
     divTarefa.appendChild(nome);
     tarefa.appendChild(divTarefa);
-    
+    lista = document.querySelector("#"+ listaId + "");
+    lista.appendChild(tarefa);
 } 
 
 btnCriaLista.onclick = function(){
