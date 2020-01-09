@@ -45,7 +45,7 @@ function criaTarefa(listaId){
 
 btnCriaLista.onclick = function(){
     criaLista();
-    // saveToStorage();
+    saveToStorage();
 }
 
 btnCriaTarefa.onclick = function(){
