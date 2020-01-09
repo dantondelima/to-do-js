@@ -6,11 +6,15 @@ function criaLista(nomeLista){
     let nome = document.createTextNode(nomeLista);
     let titulo = document.createElement("h1");
     let lista = document.createElement("ul");
+    let divTitulo = document.createElement("div");
+    divTitulo.appendChild(titulo);
+    divTitulo.id = "titulo-" + nomeLista;
     lista.id = nomeLista.replace(/ /g, "-");
     let divLista = document.createElement("div");
     titulo.appendChild(nome);
-    divLista.appendChild(titulo);
+    divLista.appendChild(divTitulo);
     divLista.appendChild(lista);
+    divLista.id = "lista-" + nomeLista;
     container.appendChild(divLista);
     let item = document.createElement("option");
     item.text = nomeLista;
