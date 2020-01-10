@@ -1,6 +1,6 @@
 var btnCriaLista = document.querySelector("#cria-lista");
 var btnCriaTarefa = document.querySelector("#cria-tarefa");
-var container = document.querySelector("#container")
+var container = document.querySelector("#container-listas")
 var select = document.querySelector("#lista-select");
 function criaLista(nomeLista){
     let nome = document.createTextNode(nomeLista);
