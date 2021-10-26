@@ -85,7 +85,6 @@ btnCriaLista.onclick = function(){
         }
     }
     criaLista(nomeLista, nomeListaId);
-    // saveToStorage();
 }
 
 btnCriaTarefa.onclick = function(){
