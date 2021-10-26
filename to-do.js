@@ -15,9 +15,7 @@ function criaLista(nomeLista, nomeListaId){
     lista.id = nomeListaId
 
     btnExcluir.id = "btn-" + nomeListaId;
-    btnExcluir.onclick = function(){
-        deletaLista(btnExcluir.id);
-    }  
+    btnExcluir.onclick = () => deletaLista(btnExcluir.id);
 
     divTitulo.appendChild(titulo);
     divTitulo.appendChild(btnExcluir);  
@@ -44,9 +42,7 @@ function criaTarefa(listaId, posicao){
     let divTarefa = document.createElement("div");
     let btnExcluir = document.createElement("button");
 
-    btnExcluir.onclick = function(){
-        deletaTarefa(listaId + "-" + posicao);
-    }  
+    btnExcluir.onclick = () => deletaTarefa(listaId + "-" + posicao);
 
     divTarefa.appendChild(nome);
     divTarefa.appendChild(btnExcluir);
